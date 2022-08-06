@@ -1,0 +1,22 @@
+.navItem {
+    position: relative;
+}
+
+.navItem .navItemChildren {
+    position: absolute;
+    display: none;
+}
+
+.navItem:hover .navItemChildren {
+    display: flex;
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    background-color: #8a898949;
+    width: 1px;
+}

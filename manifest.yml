@@ -1,0 +1,13 @@
+kind: ExternalService
+name: frontend-medicaap
+spec:
+    allow_http: true
+    domains:
+        - name: medicaap.com
+    image: 'frontendshop:latest'
+    image_pull_policy: IfNotPresent
+    path: /
+    port: 3000
+    replicas: 1
+    resources:
+        memory: 200Mi

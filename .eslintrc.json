@@ -1,0 +1,15 @@
+{
+    "plugins": ["@typescript-eslint"], // Add
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "plugin:@typescript-eslint/recommended",
+        "prettier" // Add "prettier" last. This will turn off eslint rules conflicting with prettier. This is not what will format our code.
+    ],
+    "rules": {
+        "prefer-const": "off", // Turn rule off
+        "@next/next/no-document-import-in-page": "off",
+        "react/no-unescaped-entities": "off",
+        "@next/next/no-page-custom-font": "off"
+    }
+}

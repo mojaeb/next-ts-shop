@@ -1,0 +1,36 @@
+.imageSection {
+    width: 28em;
+    display: flex;
+    flex-direction: column;
+}
+
+.productMainImage {
+    width: 100%;
+}
+
+.productMainImage:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.imagesGroupContainer:hover .paginationButtonsContainer {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1480px) {
+    .imageSection {
+        width: 30em;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    .imageSection {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .imageSection {
+        width: 100%;
+    }
+}
